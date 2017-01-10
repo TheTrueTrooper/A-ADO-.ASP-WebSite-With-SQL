@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<%@ Register Src="~/Header.ascx" TagPrefix="WUC" TagName="Header" %>
+<%@ Register Src="~/Footer.ascx" TagPrefix="WUC" TagName="Footer" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>CMPE2500 - ica08 - Color Generator</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <asp:ContentPlaceHolder  id="_Header" runat="server"> </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <WUC:Header runat="server" id="Header1" Text="ICA ADO Site" />
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <WUC:Footer runat="server" id="Footer" Text="Angelo" />
+    </form>
+</body>
+</html>
